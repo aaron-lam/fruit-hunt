@@ -34,7 +34,6 @@ public class GameMode implements Parcelable {
         mBonusAvailable = true;
         mTitle = -1;
         mLongDescription = -1;
-
     }
 
     protected GameMode(Parcel in) {

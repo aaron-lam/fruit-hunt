@@ -12,9 +12,9 @@ import fr.tvbarthel.games.chasewhisply.model.PlayerProfile;
 public class GameModeMarathon extends GameMode {
 
     private static final int RANK_LIMIT_DESERTER = 0;
-    private static final int RANK_LIMIT_SOLDIER = 3500;
-    private static final int RANK_LIMIT_CORPORAL = 5000;
-    private static final int RANK_LIMIT_SERGEANT = 6500;
+    private static final int RANK_LIMIT_SOLDIER = 150;
+    private static final int RANK_LIMIT_CORPORAL = 500;
+    private static final int RANK_LIMIT_SERGEANT = 650;
     private static final int RANK_LIMIT_ADMIRAL = 7300;
 
     public GameModeMarathon() {
