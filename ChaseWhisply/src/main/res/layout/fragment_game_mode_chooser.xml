@@ -23,14 +23,14 @@
         android:layout_gravity="center"
         android:columnWidth="@dimen/game_mode_width"
         android:numColumns="auto_fit"
-        android:layout_above="@+id/fragment_game_mode_chooser_remember"
         android:layout_below="@+id/textView"
         android:verticalSpacing="@dimen/grid_view_spacing"
         android:horizontalSpacing="@dimen/grid_view_spacing"
         android:stretchMode="columnWidth"
-        android:scrollbarStyle="outsideInset" />
+        android:scrollbarStyle="outsideInset"/>
+    <!--android:layout_above="@+id/fragment_game_mode_chooser_remember"-->
 
-    <TextView
+    <!--<TextView
         android:id="@+id/fragment_game_mode_chooser_remember"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,6 +39,6 @@
         android:layout_marginTop="@dimen/default_half_vertical_margin"
         android:padding="@dimen/half_padding"
         android:text="@string/fragment_game_mode_chooser_remember"
-        android:textColor="@color/text_view_grey" />
+        android:textColor="@color/text_view_grey" />-->
 
 </RelativeLayout>
