@@ -16,7 +16,7 @@ public class BestiaryEntryFactory {
                 break;
             case DisplayableItemFactory.TYPE_BABY_GHOST:
                 bestiaryEntry.setTargetableItem(DisplayableItemFactory.createBabyGhost());
-                bestiaryEntry.setImageResourceId(R.drawable.baby_ghost);
+                bestiaryEntry.setImageResourceId(R.drawable.hat_pikachu);
                 bestiaryEntry.setTitleResourceId(R.string.bestiary_baby_ghost_title);
                 break;
 

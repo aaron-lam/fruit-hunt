@@ -62,7 +62,7 @@ public class GameViewStandard extends GameView {
         mTimerBitmap = BitmapFactory.decodeResource(res, R.drawable.ic_timer);
         mScoreBitmap = BitmapFactory.decodeResource(res, R.drawable.ic_score);
         mBulletHoleBitmap = BitmapFactory.decodeResource(res, R.drawable.bullethole);
-        mBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.baby_ghost);
+        mBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.hat_pikachu);
         mTargetedBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.baby_ghost_targeted);
         mGhostWithHelmetBitmaps = new Bitmap[]{
                 BitmapFactory.decodeResource(res, R.drawable.ghost_with_helmet_5),

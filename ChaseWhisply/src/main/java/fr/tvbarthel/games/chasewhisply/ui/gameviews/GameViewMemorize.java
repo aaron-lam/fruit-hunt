@@ -93,7 +93,7 @@ public class GameViewMemorize extends GameViewStandard {
         int drawableId = R.drawable.ghost;
         switch (ghostType) {
             case DisplayableItemFactory.TYPE_BABY_GHOST:
-                drawableId = R.drawable.baby_ghost;
+                drawableId = R.drawable.hat_pikachu;
                 break;
             case DisplayableItemFactory.TYPE_HIDDEN_GHOST:
                 drawableId = R.drawable.hidden_ghost;
