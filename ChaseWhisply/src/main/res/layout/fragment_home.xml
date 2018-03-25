@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -136,6 +135,7 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/text_view_grey"
             android:textIsSelectable="false"
+            android:visibility="invisible"
             tools:text="0.3.2" />
 
         <ImageView
@@ -146,7 +146,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="-40dp"
             android:layout_marginLeft="-10dp"
-            android:src="@drawable/ghost"
+            android:src="@drawable/fruit_banana"
             android:tag="2" />
 
         <ImageButton
@@ -157,7 +157,6 @@
             android:layout_alignParentRight="true"
             android:layout_marginBottom="@dimen/default_half_vertical_margin"
             android:layout_marginRight="@dimen/default_half_horizontal_margin"
-            android:layout_toLeftOf="@+id/home_help_tuto"
             android:background="@drawable/button_base"
             android:minHeight="48dp"
             android:minWidth="48dp"

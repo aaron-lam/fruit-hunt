@@ -10,6 +10,7 @@ public class TargetableItem extends DisplayableItem {
     protected int mHealth;
     protected int mBasePoint;
     protected int mExpPoint;
+    protected static String mType;
     protected ArrayList<Integer> mDrop;
 
 
@@ -116,107 +117,77 @@ public class TargetableItem extends DisplayableItem {
         mDrop = drop;
     }
 
+    public static String getMonsterType() {
+        return mType;
+    }
 
     public static int randomGhostTypeEasy() {
         final int randomDraw = MathUtils.randomize(0, 100);
-        if (randomDraw < 40) {
-            //40%
+        if (randomDraw < 33) {
+            mType = "Easy";
             return DisplayableItemFactory.TYPE_EASY_GHOST;
-        } else if (randomDraw < 80) {
-            //40%
-            return DisplayableItemFactory.TYPE_HIDDEN_GHOST;
-        } else if (randomDraw < 99) {
-            //19%
-            return DisplayableItemFactory.TYPE_BLOND_GHOST;
+        } else if (randomDraw < 66) {
+            mType = "Baby";
+            return DisplayableItemFactory.TYPE_BABY_GHOST;
         } else {
-            //1%
-            return DisplayableItemFactory.TYPE_KING_GHOST;
+            mType = "Blond";
+            return DisplayableItemFactory.TYPE_BLOND_GHOST;
         }
     }
 
     public static int randomGhostType() {
         final int randomDraw = MathUtils.randomize(0, 100);
-        if (randomDraw < 40) {
-            //40%
+        if (randomDraw < 33) {
+            mType = "Easy";
             return DisplayableItemFactory.TYPE_EASY_GHOST;
-        } else if (randomDraw < 60) {
-            //20%
-            return DisplayableItemFactory.TYPE_HIDDEN_GHOST;
-        } else if (randomDraw < 75) {
-            //15%
-            return DisplayableItemFactory.TYPE_BLOND_GHOST;
-        } else if (randomDraw < 90) {
-            //15%
+        } else if (randomDraw < 66) {
+            mType = "Baby";
             return DisplayableItemFactory.TYPE_BABY_GHOST;
-        } else if (randomDraw < 99) {
-            //9%
-            return DisplayableItemFactory.TYPE_GHOST_WITH_HELMET;
         } else {
-            //1%
-            return DisplayableItemFactory.TYPE_KING_GHOST;
+            mType = "Blond";
+            return DisplayableItemFactory.TYPE_BLOND_GHOST;
         }
     }
 
     public static int randomGhostTypeHard() {
         final int randomDraw = MathUtils.randomize(0, 100);
-        if (randomDraw < 10) {
-            //10%
+        if (randomDraw < 33) {
+            mType = "Easy";
             return DisplayableItemFactory.TYPE_EASY_GHOST;
-        } else if (randomDraw < 20) {
-            //15%
-            return DisplayableItemFactory.TYPE_HIDDEN_GHOST;
-        } else if (randomDraw < 50) {
-            //25%
-            return DisplayableItemFactory.TYPE_BLOND_GHOST;
-        } else if (randomDraw < 80) {
-            //30%
+        } else if (randomDraw < 66) {
+            mType = "Baby";
             return DisplayableItemFactory.TYPE_BABY_GHOST;
-        } else if (randomDraw < 99) {
-            //19%
-            return DisplayableItemFactory.TYPE_GHOST_WITH_HELMET;
         } else {
-            //1%
-            return DisplayableItemFactory.TYPE_KING_GHOST;
+            mType = "Blond";
+            return DisplayableItemFactory.TYPE_BLOND_GHOST;
         }
     }
 
     public static int randomGhostTypeHarder() {
         final int randomDraw = MathUtils.randomize(0, 100);
-        if (randomDraw < 10) {
-            //10%
+        if (randomDraw < 33) {
+            mType = "Easy";
             return DisplayableItemFactory.TYPE_EASY_GHOST;
-        } else if (randomDraw < 25) {
-            //15%
-            return DisplayableItemFactory.TYPE_HIDDEN_GHOST;
-        } else if (randomDraw < 40) {
-            //20%
-            return DisplayableItemFactory.TYPE_BLOND_GHOST;
-        } else if (randomDraw < 70) {
-            //25%
+        } else if (randomDraw < 66) {
+            mType = "Baby";
             return DisplayableItemFactory.TYPE_BABY_GHOST;
-        } else if (randomDraw < 99) {
-            //29%
-            return DisplayableItemFactory.TYPE_GHOST_WITH_HELMET;
         } else {
-            //1%
-            return DisplayableItemFactory.TYPE_KING_GHOST;
+            mType = "Blond";
+            return DisplayableItemFactory.TYPE_BLOND_GHOST;
         }
     }
 
     public static int randomGhostTypeHardest() {
         final int randomDraw = MathUtils.randomize(0, 100);
-        if (randomDraw < 19) {
-            //19%
-            return DisplayableItemFactory.TYPE_BLOND_GHOST;
-        } else if (randomDraw < 59) {
-            //40%
+        if (randomDraw < 33) {
+            mType = "Easy";
+            return DisplayableItemFactory.TYPE_EASY_GHOST;
+        } else if (randomDraw < 66) {
+            mType = "Baby";
             return DisplayableItemFactory.TYPE_BABY_GHOST;
-        } else if (randomDraw < 99) {
-            //40%
-            return DisplayableItemFactory.TYPE_GHOST_WITH_HELMET;
         } else {
-            //1%
-            return DisplayableItemFactory.TYPE_KING_GHOST;
+            mType = "Blond";
+            return DisplayableItemFactory.TYPE_BLOND_GHOST;
         }
     }
 
@@ -227,15 +198,15 @@ public class TargetableItem extends DisplayableItem {
      */
     public static int randomGhostTypeWithoutKing() {
         final int randomDraw = MathUtils.randomize(0, 100);
-        if (randomDraw < 60) {
+        if (randomDraw < 33) {
+            mType = "Easy";
             return DisplayableItemFactory.TYPE_EASY_GHOST;
-        } else if (randomDraw < 75) {
-            return DisplayableItemFactory.TYPE_HIDDEN_GHOST;
-        } else if (randomDraw < 90) {
+        } else if (randomDraw < 66) {
+            mType = "Baby";
             return DisplayableItemFactory.TYPE_BABY_GHOST;
         } else {
-            return DisplayableItemFactory.TYPE_GHOST_WITH_HELMET;
+            mType = "Blond";
+            return DisplayableItemFactory.TYPE_BLOND_GHOST;
         }
-
     }
 }

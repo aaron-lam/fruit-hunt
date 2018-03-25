@@ -90,10 +90,10 @@ public class GameViewMemorize extends GameViewStandard {
 
 
     private int getImageResourceByGhostType(int ghostType) {
-        int drawableId = R.drawable.ghost;
+        int drawableId = R.drawable.fruit_banana;
         switch (ghostType) {
             case DisplayableItemFactory.TYPE_BABY_GHOST:
-                drawableId = R.drawable.hat_pikachu;
+                drawableId = R.drawable.fruit_peach;
                 break;
             case DisplayableItemFactory.TYPE_HIDDEN_GHOST:
                 drawableId = R.drawable.hidden_ghost;

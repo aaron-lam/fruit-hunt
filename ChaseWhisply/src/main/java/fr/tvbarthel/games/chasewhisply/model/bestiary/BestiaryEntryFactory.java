@@ -16,7 +16,7 @@ public class BestiaryEntryFactory {
                 break;
             case DisplayableItemFactory.TYPE_BABY_GHOST:
                 bestiaryEntry.setTargetableItem(DisplayableItemFactory.createBabyGhost());
-                bestiaryEntry.setImageResourceId(R.drawable.hat_pikachu);
+                bestiaryEntry.setImageResourceId(R.drawable.fruit_peach);
                 bestiaryEntry.setTitleResourceId(R.string.bestiary_baby_ghost_title);
                 break;
 
@@ -34,13 +34,13 @@ public class BestiaryEntryFactory {
 
             case DisplayableItemFactory.TYPE_BLOND_GHOST:
                 bestiaryEntry.setTargetableItem(DisplayableItemFactory.createBlondGhost());
-                bestiaryEntry.setImageResourceId(R.drawable.blond_ghost_in_tears);
+                bestiaryEntry.setImageResourceId(R.drawable.blond_ghost);
                 bestiaryEntry.setTitleResourceId(R.string.bestiary_blond_ghost_title);
                 break;
 
             default:
                 bestiaryEntry.setTargetableItem(DisplayableItemFactory.createEasyGhost());
-                bestiaryEntry.setImageResourceId(R.drawable.ghost);
+                bestiaryEntry.setImageResourceId(R.drawable.fruit_banana);
                 bestiaryEntry.setTitleResourceId(R.string.bestiary_easy_ghost_title);
                 break;
         }

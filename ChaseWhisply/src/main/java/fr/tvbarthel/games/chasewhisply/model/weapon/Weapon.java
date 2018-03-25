@@ -22,8 +22,8 @@ public class Weapon implements Parcelable {
 
     public Weapon() {
         mDamage = 0;
-        mCurrentAmmunition = 10;
-        mAmmunitionLimit = 10;
+        mCurrentAmmunition = 100;
+        mAmmunitionLimit = 100;
         mReloadingTime = 1;
         mHasRunOutOfAmmo = false;
     }

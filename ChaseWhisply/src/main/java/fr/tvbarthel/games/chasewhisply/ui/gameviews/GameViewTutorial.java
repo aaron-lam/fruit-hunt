@@ -141,6 +141,4 @@ public class GameViewTutorial extends GameViewStandard {
             }
         }
     }
-
-
 }

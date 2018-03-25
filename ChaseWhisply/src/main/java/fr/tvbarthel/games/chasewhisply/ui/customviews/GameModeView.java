@@ -51,12 +51,12 @@ public class GameModeView extends RelativeLayout {
      */
     public void setModel(GameMode model) {
         mModel = model;
-        mGameModeImage.setImageResource(mModel.getImage());
+        mGameModeImage.setImageDrawable(getContext().getDrawable(R.drawable.blank));
     }
 
     public void setModelForLeaderboard(GameMode model) {
         mModel = model;
-        mGameModeImage.setImageResource(mModel.getImage());
+        mGameModeImage.setImageDrawable(getContext().getDrawable(R.drawable.blank));
         mGameModeDescription.setText(mModel.getLeaderboardDescriptionStringId());
     }
 

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import fr.tvbarthel.games.chasewhisply.model.inventory.DroppedByList;
 import fr.tvbarthel.games.chasewhisply.model.inventory.InventoryItemInformation;
+import fr.tvbarthel.games.chasewhisply.ui.gameviews.GameViewVitaminBars;
 
 public class DisplayableItemFactory {
     // Type
@@ -64,7 +65,7 @@ public class DisplayableItemFactory {
                 targetableItem = createBabyGhost();
                 break;
 
-            case TYPE_GHOST_WITH_HELMET:
+            /*case TYPE_GHOST_WITH_HELMET:
                 targetableItem = createGhostWithHelmet();
                 break;
 
@@ -74,7 +75,7 @@ public class DisplayableItemFactory {
 
             case TYPE_KING_GHOST:
                 targetableItem = createKingGhost();
-                break;
+                break;*/
 
             case TYPE_BLOND_GHOST:
                 targetableItem = createBlondGhost();

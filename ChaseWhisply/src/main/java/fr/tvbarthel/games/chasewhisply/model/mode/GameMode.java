@@ -68,7 +68,6 @@ public class GameMode implements Parcelable {
         out.writeByte((byte) (mBonusAvailable ? 1 : 0));
         out.writeInt(mTitle);
         out.writeInt(mLongDescription);
-
     }
 
     /**

@@ -27,14 +27,14 @@ public class GameViewTime extends GameViewStandard {
      * @param canvas canvas from View.onDraw method
      */
     protected void drawTimer(Canvas canvas) {
-        final long millis = mGameEngine.getCurrentTime();
+        /*final long millis = mGameEngine.getCurrentTime();
         final int seconds = (int) (millis / 1000);
         final String remainingTime = String.valueOf(seconds);
         final int radius = Math.max(mTimerBitmap.getWidth(), mTimerBitmap.getHeight()) + (int) mPadding;
         resetPainter();
 
         //draw transparent overlay
-        useTransparentBlackPainter();
+        /*useTransparentBlackPainter();
         canvas.drawOval(new RectF(-radius, -radius, radius, radius), mPaint);
 
         //draw icon
@@ -46,7 +46,7 @@ public class GameViewTime extends GameViewStandard {
         canvas.drawText(remainingTime
                 , mPadding + radius
                 , radius
-                , mPaint);
+                , mPaint);*/
 
     }
 

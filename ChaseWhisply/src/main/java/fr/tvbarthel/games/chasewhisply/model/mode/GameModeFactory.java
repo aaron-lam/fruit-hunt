@@ -59,7 +59,7 @@ public class GameModeFactory {
 
             default:
                 g = new GameMode();
-                g.setImage(R.drawable.ghost);
+                g.setImage(R.drawable.fruit_banana);
         }
         g.setType(GAME_TYPE_REMAINING_TIME);
         g.setLevel(level);
@@ -78,7 +78,7 @@ public class GameModeFactory {
 		g.setType(GAME_TYPE_LIMITED_TARGETS);
 		g.setLevel(level);
 		g.setRules(R.string.game_mode_target_limited);
-		g.setImage(R.drawable.ghost_targeted);
+		g.setImage(R.drawable.fruit_banana);
 		return g;
 	}*/
 

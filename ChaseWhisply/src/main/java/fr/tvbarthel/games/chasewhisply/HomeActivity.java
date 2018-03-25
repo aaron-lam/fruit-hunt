@@ -24,6 +24,7 @@ import fr.tvbarthel.games.chasewhisply.mechanics.informations.GameInformationTim
 import fr.tvbarthel.games.chasewhisply.model.PlayerProfile;
 import fr.tvbarthel.games.chasewhisply.model.mode.GameMode;
 import fr.tvbarthel.games.chasewhisply.model.mode.GameModeFactory;
+import fr.tvbarthel.games.chasewhisply.model.mode.GameModeSurvival;
 import fr.tvbarthel.games.chasewhisply.model.weapon.Weapon;
 import fr.tvbarthel.games.chasewhisply.ui.customviews.GameModeView;
 import fr.tvbarthel.games.chasewhisply.ui.fragments.AboutFragment;
@@ -33,6 +34,7 @@ import fr.tvbarthel.games.chasewhisply.ui.fragments.GameModeChooserFragment;
 import fr.tvbarthel.games.chasewhisply.ui.fragments.GameModeFragment;
 import fr.tvbarthel.games.chasewhisply.ui.fragments.GameScoreFragment;
 import fr.tvbarthel.games.chasewhisply.ui.fragments.LeaderboardChooserFragment;
+import fr.tvbarthel.games.chasewhisply.ui.gameviews.GameViewVitaminBars;
 
 public class HomeActivity extends BaseGameActivity implements GameHomeFragment.Listener, GameScoreFragment.Listener,
         GameModeChooserFragment.Listener, LeaderboardChooserFragment.Listener, BonusFragment.Listener, GameModeFragment.Listener {
@@ -344,6 +346,7 @@ public class HomeActivity extends BaseGameActivity implements GameHomeFragment.L
     }
 
     public void startNewGame(GameMode gameMode, int requestCode) {
+        GameViewVitaminBars.resetVitaminLengths();
         final Intent i = new Intent(this, GameActivity.class);
         i.putExtra(GameActivity.EXTRA_GAME_MODE, gameMode);
         startActivityForResult(i, requestCode);

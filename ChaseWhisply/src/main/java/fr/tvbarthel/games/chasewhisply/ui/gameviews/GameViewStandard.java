@@ -10,6 +10,7 @@ import android.graphics.drawable.BitmapDrawable;
 
 import fr.tvbarthel.games.chasewhisply.R;
 import fr.tvbarthel.games.chasewhisply.mechanics.engine.GameEngineStandard;
+import fr.tvbarthel.games.chasewhisply.mechanics.engine.GameEngineTime;
 import fr.tvbarthel.games.chasewhisply.model.DisplayableItem;
 import fr.tvbarthel.games.chasewhisply.model.DisplayableItemFactory;
 import fr.tvbarthel.games.chasewhisply.model.TargetableItem;
@@ -48,22 +49,22 @@ public class GameViewStandard extends GameView {
 
         //initialize bitmap drawn after
         mCrossHairs = BitmapFactory.decodeResource(res, R.drawable.crosshair_white);
-        mGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.ghost);
-        mGhostTargetedBitmap = BitmapFactory.decodeResource(res, R.drawable.ghost_targeted);
+        mGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.fruit_banana);
+        mGhostTargetedBitmap = BitmapFactory.decodeResource(res, R.drawable.fruit_banana);
         mBlondGhostBitmap = new Bitmap[]{
-                BitmapFactory.decodeResource(res, R.drawable.blond_ghost_in_tears),
+                BitmapFactory.decodeResource(res, R.drawable.blond_ghost),
                 BitmapFactory.decodeResource(res, R.drawable.blond_ghost),
         };
         mBlondTargetedBitmap = new Bitmap[]{
-                BitmapFactory.decodeResource(res, R.drawable.blond_ghost_in_tears_targeted),
-                BitmapFactory.decodeResource(res, R.drawable.blond_ghost_targeted),
+                BitmapFactory.decodeResource(res, R.drawable.blond_ghost),
+                BitmapFactory.decodeResource(res, R.drawable.blond_ghost),
         };
         mAmmoBitmap = BitmapFactory.decodeResource(res, R.drawable.ic_ammo);
         mTimerBitmap = BitmapFactory.decodeResource(res, R.drawable.ic_timer);
         mScoreBitmap = BitmapFactory.decodeResource(res, R.drawable.ic_score);
         mBulletHoleBitmap = BitmapFactory.decodeResource(res, R.drawable.bullethole);
-        mBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.hat_pikachu);
-        mTargetedBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.baby_ghost_targeted);
+        mBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.fruit_peach);
+        mTargetedBabyGhostBitmap = BitmapFactory.decodeResource(res, R.drawable.fruit_peach);
         mGhostWithHelmetBitmaps = new Bitmap[]{
                 BitmapFactory.decodeResource(res, R.drawable.ghost_with_helmet_5),
                 BitmapFactory.decodeResource(res, R.drawable.ghost_with_helmet_4),
@@ -118,9 +119,6 @@ public class GameViewStandard extends GameView {
                 case DisplayableItemFactory.TYPE_BLOND_GHOST:
                     renderBlondGhost(canvas, (TargetableItem) i, currentPos);
                     break;
-                case DisplayableItemFactory.TYPE_BULLET_HOLE:
-                    renderBulletHole(canvas, i);
-                    break;
             }
         }
     }
@@ -167,6 +165,12 @@ public class GameViewStandard extends GameView {
                 renderItem(canvas, ghostBitmap, ghost);
                 mPaint.setAlpha(oldAlpha);
                 if (ghost == mGameEngine.getCurrentTarget()) {
+                    if (ghost.getMonsterType().equals("Baby"))
+                        GameViewVitaminBars.increaseVitaminALength();
+                    else if (ghost.getMonsterType().equals("Easy"))
+                        GameViewVitaminBars.increaseVitaminBLength();
+                    else if (ghost.getMonsterType().equals("Blond"))
+                        GameViewVitaminBars.increaseVitaminCLength();
                     mGameEngine.removeTarget();
                 }
             }
@@ -184,6 +188,7 @@ public class GameViewStandard extends GameView {
         drawAmmo(c);
         drawCombo(c);
         drawScore(c);
+        drawVitaminBar(c);
     }
 
     /**
@@ -311,5 +316,8 @@ public class GameViewStandard extends GameView {
         }
     }
 
-
+    public void drawVitaminBar(Canvas canvas) {
+        GameViewVitaminBars bars = new GameViewVitaminBars(getContext(), (GameEngineTime) mGameEngine);
+        bars.drawVitaminBars(canvas);
+    }
 }

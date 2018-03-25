@@ -14,7 +14,7 @@
         android:id="@+id/imageView2"
         android:layout_gravity="center"
         android:src="@drawable/crosshair_black"
-        android:background="@drawable/ghost_targeted"
+        android:background="@drawable/fruit_banana"
         android:paddingLeft="32dp"
         android:paddingTop="32dp"
         android:baselineAlignBottom="false"

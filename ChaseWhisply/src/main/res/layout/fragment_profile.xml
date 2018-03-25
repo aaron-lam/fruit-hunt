@@ -195,6 +195,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/card_shadow"
             android:layout_marginBottom="@dimen/default_vertical_margin"
+            android:visibility="gone"
             android:clickable="true">
 
             <ImageView
@@ -239,6 +240,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/card_shadow"
             android:layout_marginBottom="@dimen/default_vertical_margin"
+            android:visibility="gone"
             android:clickable="true">
 
             <ImageView
@@ -283,6 +285,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/card_shadow"
             android:layout_marginBottom="@dimen/default_vertical_margin"
+            android:visibility="gone"
             android:clickable="true">
 
             <ImageView
@@ -328,6 +331,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/card_shadow"
             android:layout_marginBottom="@dimen/default_vertical_margin"
+            android:visibility="gone"
             android:clickable="true">
 
             <ImageView

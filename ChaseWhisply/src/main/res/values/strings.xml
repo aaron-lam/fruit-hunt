@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Chase Whisply</string>
+    <string name="app_name">Fruit Hunt</string>
 
     <string name="integer_zero">0</string>
     <string name="integer_four">4</string>
@@ -58,13 +58,13 @@
     <string name="game_mode_required_message_survival">The Final Battle: the Corporal Rank of the mission \"Death to the King\" is required.</string>
 
     <!-- Game Mode titles !-->
-    <string name="game_mode_title_tutorial">Tutorial : Learn how to play.</string>
-    <string name="game_mode_title_sprint">Scouts First!</string>
-    <string name="game_mode_title_marathon">Prove your Stamina</string>
-    <string name="game_mode_title_survival">The Final Battle</string>
-    <string name="game_mode_title_death_to_the_king">The Death to the King</string>
-    <string name="game_mode_title_twenty_in_a_row">Everything is an illusion…</string>
-    <string name="game_mode_title_memorize">Brainteaser</string>
+    <string name="game_mode_title_tutorial">This mission is currently locked.</string>
+    <string name="game_mode_title_sprint">This mission is currently locked.</string>
+    <string name="game_mode_title_marathon">This mission is currently locked.</string>
+    <string name="game_mode_title_survival">Regular Fruit Hunt!</string>
+    <string name="game_mode_title_death_to_the_king">This mission is currently locked.</string>
+    <string name="game_mode_title_twenty_in_a_row">This mission is currently locked.</string>
+    <string name="game_mode_title_memorize">This mission is currently locked.</string>
 
     <!-- Game Mode rank rules !-->
     <string name="game_mode_rank_rules_death_to_the_king">Complete the mission in %1$.1f seconds or less.</string>
@@ -101,10 +101,8 @@
         \n\nFor this long fight, you should use a bonus in order to not run out ammunition to quickly!
     </string>
     <string name="game_mode_description_survival">
-        Now that you killed the king, Whisply and his sidekicks have nothing lose anymore.
-        Prepare yourself for a last epic fight that can last days and nights!
-        Each target you killed grants you a little more time.
-        Take this opportunity to exterminate a lot of ghosts once and for all!
+        As a fruit hunter, it\'s important to maintain your health! In this mission, you will hunt three different fruits for survival.
+        Peach increases Vitamin A; Banana increases Vitamin B; Orange increases Vitamin C. You will need to get as many fruits as you can, so you won\'t die because of the lack of nutrition.
     </string>
     <string name="game_mode_description_death_to_the_king">
         No more ghosts dare challenge you! The king has decided to come in person to defeat you.
@@ -123,7 +121,7 @@
 
     <!-- Score Activity !-->
     <string name="score_number_of_bullets_fired">Bullets Fired</string>
-    <string name="score_number_of_targets_killed">Targets Killed</string>
+    <string name="score_number_of_targets_killed">Fruits Hunted</string>
     <string name="score_max_combo">Max Combo</string>
     <string name="score_exp_earned">Exp Earned</string>
     <string name="score_final_score">Final Score</string>
@@ -133,8 +131,8 @@
     <string name="score_home_button">Home</string>
     <string name="score_share_button">Share</string>
     <string name="score_share_dialog">How do you want to share?</string>
-    <string name="score_share_subject">Chase Whisply</string>
-    <string name="score_share_content">I play Chase Whisply. Can you beat my score : %1$d
+    <string name="score_share_subject">Fruit Hunt</string>
+    <string name="score_share_content">I play Fruit Hunt. Can you beat my score : %1$d
         ? \n \n https://play.google.com/store/apps/details?id=fr.tvbarthel.games.chasewhisply
     </string>
     <string name="sign_in_message">If you sign in with Google Plus, you will be able to share your
@@ -156,7 +154,7 @@
     <string name="score_loot_help_message">The items you found during the hunt can be transformed into bonus from your inventory. You will find your inventory in your profile.</string>
 
     <!-- About Fragment -->
-    <string name="about_title">Chase Whisply</string>
+    <string name="about_title">Fruit Hunt</string>
     <string name="about_version_detail">version %1$s</string>
     <string name="about_developer_card_title">Developers</string>
     <string name="about_tbarthel_name">Thomas “Tbarthel” Barthélémy</string>
@@ -183,7 +181,7 @@
 
     <!-- Tuto Activity -->
     <string name="tuto_default_title">Soon…</string>
-    <string name="tuto_title_page_0">Chase Whisply</string>
+    <string name="tuto_title_page_0">Fruit Hunt</string>
     <string name="tuto_title_page_1">In Game\nTargets</string>
     <string name="tuto_title_page_2">In Game\nTargets</string>
     <string name="tuto_title_page_3">In Game\nCombos</string>
@@ -204,16 +202,16 @@
     <!-- Tuto Fragment Page Welcome -->
     <string name="tuto_page_welcome_title">Welcome,</string>
     <string name="tuto_page_welcome_subtitle">padawan.</string>
-    <string name="tuto_page_welcome_content">Your mission is to seek, find and kill
-        the ghosts living around you.
+    <string name="tuto_page_welcome_content">Your mission is to find the fruits nearby you to
+        supplement enough vitamins to survive.
     </string>
     <string name="tuto_page_welcome_additional_text">Swipe right-to-left to learn more.</string>
 
     <!-- Tuto Fragment Page Play Button -->
-    <string name="tuto_page_play_button_content">Select your favorite mode and hunt the ghosts around you.</string>
+    <string name="tuto_page_play_button_content">Press start and play!</string>
 
     <!--Tuto Fragment Page Profile Button -->
-    <string name="tuto_page_profile_button_content">Follow your progress and discover information about your enemy.</string>
+    <string name="tuto_page_profile_button_content">Follow your progress and check whether you are a healthy hunter or not!</string>
 
     <!-- Tuto Fragment Page Leaderboard Button -->
     <string name="tuto_page_leaderboard_button_content">Compare your score with your friends’ and try to be the best
@@ -221,7 +219,7 @@
     </string>
 
     <!-- Tuto Fragment Page Achievement Button -->
-    <string name="tuto_page_achievement_button_content">Improve yourself as a ghost hunter and keep track of your
+    <string name="tuto_page_achievement_button_content">Improve yourself as a fruit hunter and keep track of your
         progress.
     </string>
 
@@ -294,8 +292,8 @@
     <string name="inventory_item_default_title">Item’s Title</string>
     <string name="inventory_item_default_description">Item’s Description</string>
     <plurals name="inventory_item_coin_title">
-        <item quantity="one">Old Coin</item>
-        <item quantity="other">Old Coins</item>
+        <item quantity="one">Orange Juice</item>
+        <item quantity="other">Orange Juice</item>
     </plurals>
     <string name="inventory_item_coin_description">This coin is so old that you have a very difficult time determining
         whether it is actually made of gold. Since it’s not too heavy, you keep it in your bag regardless.
@@ -308,8 +306,8 @@
         ghost. It can be used to forge useful steel items.
     </string>
     <plurals name="inventory_item_baby_drool_title">
-        <item quantity="one">Baby Drool</item>
-        <item quantity="other">Baby Drools</item>
+        <item quantity="one">Peach Seed</item>
+        <item quantity="other">Peach Seed</item>
     </plurals>
     <string name="inventory_item_baby_drool_description">Why on the earth should you keep a baby drool in an FPS
         inventory?!?
@@ -344,8 +342,8 @@
         so handle it with great care. Using these bullets grants you +10 damage bonus.
     </string>
     <plurals name="inventory_item_ghost_tear_title">
-        <item quantity="one">Ghost Teardrop</item>
-        <item quantity="other">Ghost Teardrops</item>
+        <item quantity="one">Banana Skin</item>
+        <item quantity="other">Banana Skin</item>
     </plurals>
     <string name="inventory_item_ghost_tear_description">
         A tiny drop of tear that probably came from a Mum ghost who died trying to save her children. You can feel a
@@ -407,11 +405,11 @@
 
     <!-- Military ranks -->
     <string name="military_ranks">Ranks</string>
-    <string name="deserter">Deserter</string>
-    <string name="soldier">Soldier</string>
-    <string name="corporal">Corporal</string>
-    <string name="sergeant">Sergeant</string>
-    <string name="admiral">Admiral</string>
+    <string name="deserter">Unhealthy Hunter</string>
+    <string name="soldier">Healthy Hunter</string>
+    <string name="corporal">Fruit Ninja</string>
+    <string name="sergeant">Fruit Master</string>
+    <string name="admiral">Fruit God</string>
 
     <string-array name="ranks_array_full">
         <item>@string/deserter</item>
@@ -441,7 +439,7 @@
     <!-- Email Us -->
     <string name="email_us_email">tvbarthel@gmail.com</string>
     <string name="email_us_uri">mailto:%1$s?subject=%2$s</string>
-    <string name="email_us_subject_report_a_bug">[Chase Whisply] Bug Report</string>
-    <string name="email_us_subject_contact_us">[Chase Whisply] Here are some suggestions!</string>
+    <string name="email_us_subject_report_a_bug">[Fruit Hunt] Bug Report</string>
+    <string name="email_us_subject_contact_us">[Fruit Hunt] Here are some suggestions!</string>
 
 </resources>
